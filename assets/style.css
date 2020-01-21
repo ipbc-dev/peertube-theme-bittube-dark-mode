@@ -46,6 +46,6 @@ body {
   border: 1px solid var(--mainBackgroundColor) !important;
 }
 
-/* .icon.icon-logo{
-  background: url(../public/images/BitTube-symbol.svg)
-} */
+.icon.icon-logo{
+  background: url(../static/images/BitTube-symbol.svg)
+}
