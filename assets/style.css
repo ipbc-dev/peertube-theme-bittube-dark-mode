@@ -34,6 +34,10 @@ body {
   background-color: var(--mainColor) !important;
 }
 
+.upload-button-label{
+  color: var(--whiteColor) !important; 
+}
+
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
