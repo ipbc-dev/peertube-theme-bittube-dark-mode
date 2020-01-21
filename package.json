@@ -1,5 +1,5 @@
 {
-  "name": "peertube-theme-bittubedarkmode",
+  "name": "peertube-theme-bittube-dark-mode",
   "version": "0.0.2",
   "description": "BitTube dark theme",
   "engine": {
@@ -9,9 +9,9 @@
     "peertube",
     "theme"
   ],
-  "homepage": "https://github.com/ipbc-dev/bittube-dark-theme",
+  "homepage": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode",
   "author": "BitTube",
-  "bugs": "https://github.com/ipbc-dev/bittube-dark-theme/issues",
+  "bugs": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/issues",
   "staticDirs": {},
   "css": [
     "assets/style.css"
