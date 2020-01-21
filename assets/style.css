@@ -21,6 +21,7 @@ body {
 .header[_ngcontent-ale-c0]{
   background-color: var(--menuBackgroundColor);
 }
-.upload-button[_ngcontent-yeo-c2]{
+
+.upload-button{
  color: var(--inputColor) !important; 
 }
