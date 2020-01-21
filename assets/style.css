@@ -22,6 +22,7 @@ body {
   background-color: var(--menuBackgroundColor);
 }
 
-.upload-button{
- color: var(--inputColor) !important; 
+.upload-button[_ngcontent-xad-c2], .upload-button[_ngcontent-xad-c2]:active, .upload-button[_ngcontent-xad-c2]:focus{
+  color: var(--inputColor) !important; 
+  background-color: var(--mainColor) !important;
 }
