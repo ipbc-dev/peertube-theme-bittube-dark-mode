@@ -30,7 +30,7 @@ body {
   background-color: var(--menuBackgroundColor);
 }
 
-.upload-button, .upload-button:active, .upload-button:focus{
+#custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
@@ -46,6 +46,6 @@ body {
   border: 1px solid var(--mainBackgroundColor) !important;
 }
 
-.icon.icon-logo{
+/* .icon.icon-logo{
   background: url(../public/images/BitTube-symbol.svg)
-}
+} */
