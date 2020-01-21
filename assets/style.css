@@ -9,6 +9,7 @@ body {
   --menuForegroundColor: rgba(195,195,195,0.878431);
   --menuBackgroundColor: #272727;
   --whiteColor: #ffffff;
+  --mainHoverColor: #0481bf;
 }
 
 .dropdown-menu{
