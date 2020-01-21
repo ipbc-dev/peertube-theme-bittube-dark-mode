@@ -13,6 +13,10 @@ body {
   /*font-family: "Open Sans",sans-serif;*/
 }
 
+#search-video{
+  background: var(--mainBackgroundColor) !important;
+}
+
 .dropdown-menu{
   background-color: var(--menuBackgroundColor);
   color: var(--menuForegroundColor);
