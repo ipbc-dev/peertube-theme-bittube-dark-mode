@@ -1,1 +1,3 @@
-# PeerTube theme Quickstart
+# PeerTube dark theme
+
+Dark theme for PeerTube.

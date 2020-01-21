@@ -1,0 +1,22 @@
+body {
+  --mainBackgroundColor: #121212;
+  --mainForegroundColor: rgba(195,195,195,0.878431);
+  --submenuColor: #272727;
+  --inputColor: #fff;
+  --inputPlaceholderColor: rgba(195,195,195,0.878431);
+  --menuAndHeaderBackgroundColor: #272727;
+  --menuForegroundColor: rgba(195,195,195,0.878431);
+  --menuBackgroundColor: #272727;
+}
+
+.dropdown-menu{
+  background-color: var(--menuBackgroundColor);
+  color: var(--menuForegroundColor);
+}
+
+.dropdown-menu a{
+  color: var(--menuForegroundColor) !important;
+}
+.header[_ngcontent-ale-c0]{
+  background-color: var(--menuBackgroundColor);
+}
