@@ -18,11 +18,11 @@ body {
 .dropdown-menu a{
   color: var(--menuForegroundColor) !important;
 }
-.header[_ngcontent-ale-c0]{
+.header{
   background-color: var(--menuBackgroundColor);
 }
 
-.upload-button[_ngcontent-xad-c2], .upload-button[_ngcontent-xad-c2]:active, .upload-button[_ngcontent-xad-c2]:focus{
+.upload-button, .upload-button:active, .upload-button:focus{
   color: var(--inputColor) !important; 
   background-color: var(--mainColor) !important;
 }
