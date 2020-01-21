@@ -34,5 +34,5 @@ body {
 }
 
 .root .form-group-checkbox input:checked + span{
-  background: var(--mainColor);
+  background: var(--mainColor) !important;
 }
