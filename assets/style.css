@@ -26,17 +26,13 @@ body {
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor);
 }
-.header{
+#custom-css .header{
   background-color: var(--menuBackgroundColor);
 }
 
 #custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
-}
-
-.upload-button-label{
-  color: var(--whiteColor) !important; 
 }
 
 .root .form-group-checkbox input:checked + span{
