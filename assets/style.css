@@ -47,5 +47,8 @@ body {
 }
 
 .icon.icon-logo{
-  background: url(../static/images/BitTube-symbol.svg)
+  background: url(../../static/images/BitTube-symbol.svg) no-repeat !important;
+  width: 30px !important;
+  background-size: cover !important;
+  margin-right: 5px;
 }
