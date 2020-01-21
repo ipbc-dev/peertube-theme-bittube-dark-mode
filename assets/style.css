@@ -42,13 +42,7 @@ body {
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
+
 .peertube-select-container, input, textarea{
   border: 1px solid var(--mainBackgroundColor) !important;
-}
-
-.icon.icon-logo{
-  background: url(../../static/images/BitTube-symbol.svg) no-repeat !important;
-  width: 30px !important;
-  background-size: cover !important;
-  margin-right: 5px;
 }
