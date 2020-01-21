@@ -36,3 +36,6 @@ body {
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
+.peertube-select-container, input{
+  border: 1px solid var(--mainBackgroundColor) !important;
+}
