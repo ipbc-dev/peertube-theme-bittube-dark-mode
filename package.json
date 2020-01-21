@@ -12,7 +12,9 @@
   "homepage": "https://github.com/ipbc-dev/bittube-dark-theme",
   "author": "BitTube",
   "bugs": "https://github.com/ipbc-dev/bittube-dark-theme/issues",
-  "staticDirs": {},
+  "staticDirs": {
+    "images": "public/images"
+  },
   "css": [
     "assets/style.css"
   ],

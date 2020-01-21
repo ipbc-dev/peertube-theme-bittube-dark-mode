@@ -10,6 +10,7 @@ body {
   --menuBackgroundColor: #272727;
   --whiteColor: #ffffff;
   --mainHoverColor: #0481bf;
+  /*font-family: "Open Sans",sans-serif;*/
 }
 
 .dropdown-menu{
@@ -41,6 +42,10 @@ body {
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
-.peertube-select-container, input{
+.peertube-select-container, input, textarea{
   border: 1px solid var(--mainBackgroundColor) !important;
+}
+
+.icon.icon-logo{
+  background: url(../public/images/BitTube-symbol.svg)
 }
