@@ -3,11 +3,12 @@ body {
   --mainBackgroundColor: #121212;
   --mainForegroundColor: rgba(195,195,195,0.878431);
   --submenuColor: #272727;
-  --inputColor: #fff;
+  --inputColor: #272727;
   --inputPlaceholderColor: rgba(195,195,195,0.878431);
   --menuAndHeaderBackgroundColor: #272727;
   --menuForegroundColor: rgba(195,195,195,0.878431);
   --menuBackgroundColor: #272727;
+  --whiteColor: #ffffff;
 }
 
 .dropdown-menu{
@@ -18,11 +19,20 @@ body {
 .dropdown-menu a{
   color: var(--menuForegroundColor) !important;
 }
+
+.dropdown-item:focus, .dropdown-item:hover{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor);
+}
 .header{
   background-color: var(--menuBackgroundColor);
 }
 
 .upload-button, .upload-button:active, .upload-button:focus{
-  color: var(--inputColor) !important; 
+  color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
+}
+
+.root .form-group-checkbox input:checked + span{
+  background: var(--mainColor);
 }
