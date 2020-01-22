@@ -33,16 +33,45 @@ body {
 #custom-css .header{
   background-color: var(--menuBackgroundColor);
 }
-
+/* Buttons */
 #custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
-
+/* Inputs */
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
-
+/* Selects */
 .peertube-select-container, input, textarea{
   border: 1px solid var(--mainBackgroundColor) !important;
+}
+.peertube-select-container > select {
+  background: var(--inputColor);
+  color: var(--mainForegroundColor);
+}
+.peertube-select-container:after{
+  border-top-color: var(--mainForegroundColor) !important;
+}
+.peertube-select-container > select > option{
+  background: var(--inputColor);
+  color: var(--mainForegroundColor) !important;
+}
+.peertube-select-container > select > option:hover, .peertube-select-container > select > option:checked{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor) !important;
+}
+/* MultiSelects */
+body .ui-multiselect{
+  background: var(--inputColor);
+  border: none;
+}
+body .ui-multiselect .ui-multiselect-trigger{
+  background: var(--inputColor);
+}
+p-multiselect .pi.pi-chevron-down::after{
+  border-top-color: var(--mainForegroundColor);
+}
+body .ui-multiselect .ui-multiselect-label {
+  color: var(--mainForegroundColor);
 }
