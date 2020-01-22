@@ -57,21 +57,62 @@ body {
   background: var(--inputColor);
   color: var(--mainForegroundColor) !important;
 }
-.peertube-select-container > select > option:hover, .peertube-select-container > select > option:checked{
+#custom-css .peertube-select-container > select option:hover, #custom-css .peertube-select-container > select > option:checked{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
 /* MultiSelects */
-body .ui-multiselect{
+#custom-css .ui-multiselect{
   background: var(--inputColor);
   border: none;
 }
-body .ui-multiselect .ui-multiselect-trigger{
+#custom-css .ui-multiselect .ui-multiselect-trigger{
   background: var(--inputColor);
 }
 p-multiselect .pi.pi-chevron-down::after{
   border-top-color: var(--mainForegroundColor);
 }
-body .ui-multiselect .ui-multiselect-label {
+#custom-css .ui-multiselect .ui-multiselect-label {
   color: var(--mainForegroundColor);
 }
+#custom-css .ui-multiselect-panel{
+  background: var(--inputColor);
+  color: var(--mainForegroundColor);
+}
+
+#custom-css  a my-global-icon svg circle[stroke="#000000"],
+#custom-css  a my-global-icon svg g[stroke="#000000"],
+#custom-css  a my-global-icon svg path[stroke="#000000"],
+#custom-css  a my-global-icon svg polygon[stroke="#000000"],
+#custom-css  a my-global-icon svg rect[stroke="#000000"],
+#custom-css  a my-global-icon svg ellipse[stroke="#000000"]{
+  stroke: var(--mainForegroundColor) !important;
+}
+#custom-css .dropdown-item:hover my-global-icon svg circle[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg g[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg polygon[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg rect[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"]{
+  stroke: var(--whiteColor) !important;
+}
+
+
+#custom-css  a my-global-icon svg circle[fill="#000000"],
+#custom-css  a my-global-icon svg g[fill="#000000"],
+#custom-css  a my-global-icon svg path[fill="#000000"],
+#custom-css  a my-global-icon svg polygon[fill="#000000"],
+#custom-css  a my-global-icon svg rect[fill="#000000"]{
+  fill: var(--mainForegroundColor) !important;
+}
+#custom-css .dropdown-item:hover my-global-icon svg circle[fill="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg g[fill="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg path[fill="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg polygon[fill="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg rect[fill="#000000"]{
+  fill: var(--whiteColor) !important;
+}
+
+
+
+
