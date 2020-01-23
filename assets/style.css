@@ -113,6 +113,8 @@ p-multiselect .pi.pi-chevron-down::after{
   fill: var(--whiteColor) !important;
 }
 
-
+#custom-css .upload-button my-global-icon svg g[stroke="#000000"] {
+  stroke: var(--whiteColor) !important;
+}
 
 
