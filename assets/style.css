@@ -79,7 +79,7 @@ p-multiselect .pi.pi-chevron-down::after{
   background: var(--inputColor);
   color: var(--mainForegroundColor);
 }
-
+/* Icons hovers */
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
 #custom-css  a my-global-icon svg g[stroke="#000000"],
 #custom-css  a my-global-icon svg path[stroke="#000000"],
