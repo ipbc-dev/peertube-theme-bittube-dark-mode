@@ -16,7 +16,10 @@ body {
 #search-video{
   background: var(--mainBackgroundColor) !important;
 }
-
+#custom-css .header{
+  background-color: var(--menuBackgroundColor);
+}
+/* Dropdown */
 .dropdown-menu{
   background-color: var(--menuBackgroundColor);
   color: var(--menuForegroundColor);
@@ -26,17 +29,17 @@ body {
   color: var(--menuForegroundColor) !important;
 }
 
-.dropdown-item:focus, .dropdown-item:hover{
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-menu .dropdown-item:active{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor);
-}
-#custom-css .header{
-  background-color: var(--menuBackgroundColor);
 }
 /* Buttons */
 #custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
+}
+#custom-css .upload-button my-global-icon svg g[stroke="#000000"] {
+  stroke: var(--whiteColor) !important;
 }
 /* Inputs */
 .root .form-group-checkbox input:checked + span{
@@ -79,7 +82,17 @@ p-multiselect .pi.pi-chevron-down::after{
   background: var(--inputColor);
   color: var(--mainForegroundColor);
 }
-/* Icons hovers */
+/* Icons colors & hovers */
+/* Stroke */
+#custom-css  my-global-icon svg circle[stroke="#000000"],
+#custom-css  my-global-icon svg g[stroke="#000000"],
+#custom-css  my-global-icon svg path[stroke="#000000"],
+#custom-css  my-global-icon svg polygon[stroke="#000000"],
+#custom-css  my-global-icon svg rect[stroke="#000000"],
+#custom-css  my-global-icon svg ellipse[stroke="#000000"]{
+  stroke: var(--mainForegroundColor) !important;
+}
+
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
 #custom-css  a my-global-icon svg g[stroke="#000000"],
 #custom-css  a my-global-icon svg path[stroke="#000000"],
@@ -88,16 +101,31 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css  a my-global-icon svg ellipse[stroke="#000000"]{
   stroke: var(--mainForegroundColor) !important;
 }
+
+#custom-css  a my-global-icon svg linearGradient stop{
+  stop-color: var(--mainForegroundColor);
+}
+
 #custom-css .dropdown-item:hover my-global-icon svg circle[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg g[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg polygon[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg rect[stroke="#000000"],
-#custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"]{
+#custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg circle[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg g[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg path[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg polygon[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg rect[stroke="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg ellipse[stroke="#000000"]{
   stroke: var(--whiteColor) !important;
 }
+#custom-css .dropdown-item:hover my-global-icon svg linearGradient stop,
+#custom-css .dropdown-item:active my-global-icon svg linearGradient stop{
+  stop-color: var(--whiteColor) !important;
+}
 
-
+  /* Fill */
 #custom-css  a my-global-icon svg circle[fill="#000000"],
 #custom-css  a my-global-icon svg g[fill="#000000"],
 #custom-css  a my-global-icon svg path[fill="#000000"],
@@ -105,16 +133,23 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css  a my-global-icon svg rect[fill="#000000"]{
   fill: var(--mainForegroundColor) !important;
 }
+
 #custom-css .dropdown-item:hover my-global-icon svg circle[fill="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg g[fill="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg path[fill="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg polygon[fill="#000000"],
-#custom-css .dropdown-item:hover my-global-icon svg rect[fill="#000000"]{
+#custom-css .dropdown-item:hover my-global-icon svg rect[fill="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg circle[fill="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg g[fill="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg path[fill="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg polygon[fill="#000000"],
+#custom-css .dropdown-item:active my-global-icon svg rect[fill="#000000"]{
   fill: var(--whiteColor) !important;
 }
 
-#custom-css .upload-button my-global-icon svg g[stroke="#000000"] {
-  stroke: var(--whiteColor) !important;
+/* NavMenu*/
+#custom-css .title-page.active,
+#custom-css .title-page:hover{
+  color: var(--whiteColor);
 }
-
 
