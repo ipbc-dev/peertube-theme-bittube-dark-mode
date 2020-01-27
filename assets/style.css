@@ -153,3 +153,7 @@ p-multiselect .pi.pi-chevron-down::after{
   color: var(--whiteColor);
 }
 
+#custom-css .grey-button, #custom-css .grey-button:active, #custom-css .grey-button:focus {
+  background-color: var(--menuAndHeaderBackgroundColor);
+  color: var(--mainForegroundColor);
+}
