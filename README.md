@@ -2,7 +2,7 @@
 
     Dark theme for BitTube instances in PeerTube. 
 
- # How to install in your PeerTube instance
+   # How to install in your PeerTube instance
 
     - Open a browser and go to your instance homepage. 
     - Login as root (or your administrator user).
@@ -13,3 +13,9 @@
     - In the searchbox below, you can type the name of the Theme to easy find it.
     - Choose your Theme and click Install (cloud icon).
     - Before see the changes, you will need to hard reload your browser.
+
+   # Example Screenshots
+
+   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/blob/master/public/images/screenshot1.png)
+
+   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/blob/master/public/images/screenshot2.png)
