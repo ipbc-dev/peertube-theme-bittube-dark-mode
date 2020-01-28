@@ -10,43 +10,142 @@ body {
   --menuBackgroundColor: #272727;
   --whiteColor: #ffffff;
   --mainHoverColor: #0481bf;
+  --actionButtonColor: #ffffff;
+  --dangerBackgroundColor: #d9534f;
   /*font-family: "Open Sans",sans-serif;*/
 }
-
+/* Header */
 #search-video{
   background: var(--mainBackgroundColor) !important;
 }
 #custom-css .header{
   background-color: var(--menuBackgroundColor);
 }
+/* NavMenu*/
+#custom-css .title-page.active,
+#custom-css .title-page:hover{
+  color: var(--whiteColor);
+}
+#custom-css .row .header a,
+#custom-css .row .header button{
+  color: var(--whiteColor);
+  background-color: var(--mainHoverColor);
+}
+#custom-css .row .header a my-global-icon svg g[stroke="#000000"],
+#custom-css .row .header button my-global-icon svg path[stroke="#333333"],
+#custom-css .row .header button my-global-icon svg g[stroke="#000000"]{
+  stroke: var(--whiteColor) !important;
+}
+#custom-css .row .header button my-global-icon svg path[fill="#333333"]{
+  fill: var(--whiteColor) !important;
+}
+
 /* Dropdown */
-.dropdown-menu{
+#custom-css .dropdown-menu,
+#custom-css .dropdown-menu .dropdown-item{
   background-color: var(--menuBackgroundColor);
   color: var(--menuForegroundColor);
 }
 
-.dropdown-menu a{
+#custom-css .dropdown-menu a,
+#custom-css span.dropdown-item.custom-action,
+#custom-css a.dropdown-item.with-icon{
   color: var(--menuForegroundColor) !important;
 }
 
-.dropdown-item:focus, .dropdown-item:hover, .dropdown-menu .dropdown-item:active{
-  color: var(--whiteColor) !important; 
-  background-color: var(--mainColor);
-}
-/* Buttons */
-#custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
+#custom-css .dropdown-item:focus:not(.new-playlist-block),
+#custom-css .dropdown-item:hover:not(.new-playlist-block),
+#custom-css .dropdown-item:active:not(.new-playlist-block),
+#custom-css span.dropdown-item.custom-action:hover,
+#custom-css a.dropdown-item.with-icon:hover{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
-#custom-css .upload-button my-global-icon svg g[stroke="#000000"] {
+  /* Dropdown inputs && checkboxes */
+  #custom-css .dropdown-menu .peertube-select-container,
+  #custom-css .dropdown-menu input[type="text"], 
+  #custom-css .dropdown-menu textarea,
+  #custom-css .dropdown-menu span[role="checkbox"]{
+    border: 1px solid var(--mainForegroundColor) !important
+  }
+  #custom-css .dropdown-menu input[type="submit"]{
+    border: 1px solid transparent !important; /* Removing black border in buttons */
+  }
+  #custom-css .header .options-row{
+    padding-left: 0;
+  }
+  #custom-css .header .options-row > div{
+    justify-content: space-between;
+  }
+/* Buttons */
+#custom-css .upload-button, 
+#custom-css .upload-button:active, 
+#custom-css .upload-button:focus,
+#custom-css .root .button-file{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor) !important;
+}
+#custom-css .upload-button my-global-icon svg g[stroke="#000000"],
+#custom-css a.add-button my-global-icon svg circle[stroke="#000000"],
+#custom-css a.create-button my-global-icon svg circle[stroke="#000000"],
+#custom-css a.create-caption my-global-icon svg circle[stroke="#000000"]{
   stroke: var(--whiteColor) !important;
+}
+#custom-css a.add-button my-global-icon svg rect[fill="#000000"],
+#custom-css a.create-button my-global-icon svg rect[fill="#000000"],
+#custom-css a.create-caption my-global-icon svg rect[fill="#000000"]{
+  fill: var(--whiteColor) !important;
+}
+#custom-css .grey-button, #custom-css .grey-button:active, #custom-css .grey-button:focus {
+  background-color: var(--menuAndHeaderBackgroundColor);
+  color: var(--mainForegroundColor);
+}
+#custom-css my-video-comments my-video-comment-add .comment-buttons .cancel-button{
+  display: none; /* Hidden because it's not needed and it have a buggy behaviour */
+}
+#custom-css .reset-button.reset-button-small{
+  color: var(--mainColor);
+}
+  /* Delete buttons */
+  #custom-css .delete-me button:hover,
+  #custom-css .delete-me button,
+  #custom-css my-delete-button .action-button-delete,
+  #custom-css my-delete-button .action-button-delete:active{
+    background-color: var(--dangerBackgroundColor);
+    color: var(--whiteColor);
+  }
+  #custom-css .top-buttons .delete-history{
+    background-color: var(--dangerBackgroundColor);
+    color: var(--whiteColor);
+  }
+  /* Trash bin icon */
+  #custom-css my-global-icon[iconname="delete"] svg path[stroke="#000000"]{
+    stroke: var(--whiteColor) !important;
+  }
+  #custom-css my-global-icon[iconname="delete"] svg path[fill="#000000"],
+  #custom-css my-global-icon[iconname="delete"] svg rect[fill="#000000"]{
+    fill: var(--whiteColor) !important;
+  }
+
+/* Modals */
+#custom-css my-input-readonly-copy input{
+  color: var(--whiteColor);
+}
+#custom-css .form-group-checkbox input + span {
+  border-color: var(--mainForegroundColor);
 }
 /* Inputs */
 .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
+#custom-css .action-button .count{
+  color: var(--whiteColor);
+}
+#custom-css .modal-content input.readonly{
+  color: var(--whiteColor);
+}
 /* Selects */
-.peertube-select-container, input, textarea{
+.peertube-select-container, input[type="text"], textarea{
   border: 1px solid var(--mainBackgroundColor) !important;
 }
 .peertube-select-container > select {
@@ -60,7 +159,8 @@ body {
   background: var(--inputColor);
   color: var(--mainForegroundColor) !important;
 }
-#custom-css .peertube-select-container > select option:hover, #custom-css .peertube-select-container > select > option:checked{
+#custom-css .peertube-select-container > select option:hover, 
+#custom-css .peertube-select-container > select > option:checked{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
@@ -106,6 +206,12 @@ p-multiselect .pi.pi-chevron-down::after{
   stop-color: var(--mainForegroundColor);
 }
 
+#custom-css .action-button:not(.action-button-edit) > my-global-icon svg g[stroke="#000000"],
+#custom-css  my-global-icon[iconname="validate"] svg circle,
+#custom-css  my-global-icon[iconname="validate"] svg polyline{
+  stroke: var(--whiteColor) !important;
+}
+
 #custom-css .dropdown-item:hover my-global-icon svg circle[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg g[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000000"],
@@ -130,7 +236,13 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css  a my-global-icon svg g[fill="#000000"],
 #custom-css  a my-global-icon svg path[fill="#000000"],
 #custom-css  a my-global-icon svg polygon[fill="#000000"],
-#custom-css  a my-global-icon svg rect[fill="#000000"]{
+#custom-css  a my-global-icon svg rect[fill="#000000"],
+#custom-css  span my-global-icon svg circle[fill="#000000"],
+#custom-css  span my-global-icon svg g[fill="#000000"],
+#custom-css  span my-global-icon svg path[fill="#000000"],
+#custom-css  span my-global-icon svg polygon[fill="#000000"],
+#custom-css  span my-global-icon svg rect[fill="#000000"],
+#custom-css  .notification my-global-icon svg path[fill="#000000"]{
   fill: var(--mainForegroundColor) !important;
 }
 
@@ -147,13 +259,8 @@ p-multiselect .pi.pi-chevron-down::after{
   fill: var(--whiteColor) !important;
 }
 
-/* NavMenu*/
-#custom-css .title-page.active,
-#custom-css .title-page:hover{
+/* Pagination */
+#custom-css .ui-paginator .ui-paginator-element:hover:not(.ui-state-disabled){
   color: var(--whiteColor);
-}
-
-#custom-css .grey-button, #custom-css .grey-button:active, #custom-css .grey-button:focus {
-  background-color: var(--menuAndHeaderBackgroundColor);
-  color: var(--mainForegroundColor);
+  background-color: var(--mainHoverColor);
 }
