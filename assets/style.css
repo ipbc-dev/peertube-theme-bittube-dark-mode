@@ -110,7 +110,8 @@ body {
   #custom-css .delete-me button:hover,
   #custom-css .delete-me button,
   #custom-css my-delete-button .action-button-delete,
-  #custom-css my-delete-button .action-button-delete:active{
+  #custom-css my-delete-button .action-button-delete:active,
+  #custom-css .action-button-delete-selection{
     background-color: var(--dangerBackgroundColor);
     color: var(--whiteColor);
   }
