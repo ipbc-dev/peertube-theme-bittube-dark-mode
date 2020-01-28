@@ -16,6 +16,6 @@
 
    # Example Screenshots
 
-   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/blob/master/public/images/screenshot1.png)
+   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-dark-mode/master/public/images/screenshot1.png)
 
-   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/blob/master/public/images/screenshot2.png)
+   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-dark-mode/master/public/images/screenshot2.png)
