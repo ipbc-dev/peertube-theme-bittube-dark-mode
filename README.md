@@ -1,3 +1,3 @@
-# PeerTube dark theme
+# BitTube dark theme
 
-Dark theme for PeerTube.
+Dark theme for BitTube instances in PeerTube.
