@@ -265,3 +265,96 @@ p-multiselect .pi.pi-chevron-down::after{
   color: var(--whiteColor) !important;
   background-color: var(--mainHoverColor) !important;
 }
+
+/* Notifications Panel */
+#custom-css .popover-notifications.popover .popover-body .notifications-header,
+#custom-css .popover-notifications.popover .popover-body .notifications-header a{
+  background-color: var(--menuAndHeaderBackgroundColor);
+  color: var(--mainForegroundColor) !important;
+}
+#custom-css .popover-notifications.popover .popover-body .notifications-header button{
+  color: var(--mainForegroundColor);
+}
+#custom-css .notification{
+  background-color: var(--mainBackgroundColor);
+  color: var(--mainForegroundColor);
+}
+#custom-css .notification.unread{
+  background-color: var(--menuAndHeaderBackgroundColor);
+}
+#custom-css .popover-notifications.popover .popover-body .all-notifications{
+  background-color: var(--menuBackgroundColor);
+  color: var(--mainForegroundColor);
+}
+#custom-css .bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-bottom>.arrow::after{
+  border-bottom-color: var(--menuBackgroundColor);
+}
+#custom-css #inbox-full svg path[stroke="#333333"]{
+  stroke: var(--mainForegroundColor);
+}
+
+#custom-css .popover-notifications.popover .popover-body .all-notifications svg g path[stroke="#333333"]{
+  stroke: var(--mainForegroundColor);
+}
+#custom-css .popover-notifications.popover .popover-body .all-notifications svg g path[fill="#333333"]{
+  fill: var(--mainForegroundColor);
+}
+
+/* Create new playlist, url video... preview box */
+#custom-css .root .preview-container .preview.no-image{
+  background-color: var(--menuAndHeaderBackgroundColor);
+  border-color: var(--mainBackgroundColor);
+}
+#custom-css .preview-container .button-file.with-icon g[stroke="#000000"]{
+  stroke: var(--whiteColor) !important;
+}
+
+/* Subscriptions buttons */
+#custom-css .btn-group-subscribe.unsubscribe-button .btn, .btn-group-subscribe.unsubscribe-button .btn:active, .btn-group-subscribe.unsubscribe-button .btn:focus{
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+/* Upload video container */
+#custom-css .root-tabset.video-add-tabset .upload-video-container{
+  border-color: var(--mainForegroundColor) !important;
+}
+#custom-css .root-tabset.video-add-tabset>.nav a.nav-link.active{
+  border-color: var(--mainForegroundColor) !important;
+}
+
+/* Calendar */
+#custom-css p-calendar span input{
+  color: var(--mainForegroundColor) !important;
+}
+
+#custom-css .ui-datepicker{
+  background-color: var(--menuAndHeaderBackgroundColor);
+  color: var(--mainForegroundColor);
+}
+
+#custom-css .ui-datepicker .ui-datepicker-header,
+#custom-css p-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+#custom-css p-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next{
+  background-color: var(--menuAndHeaderBackgroundColor);
+  color: var(--mainForegroundColor) !important;
+}
+#custom-css .ui-datepicker table td>a:hover,
+#custom-css .ui-datepicker table td>span:hover{
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+#custom-css .ui-datepicker table td>a.ui-state-active,
+#custom-css .ui-datepicker table td>span.ui-state-active{
+  background-color: var(--mainHoverColor);
+  color: var(--whiteColor);
+}
+
+#custom-css p-calendar .ui-datepicker .ui-timepicker .pi.pi-chevron-down, 
+#custom-css p-calendar .ui-datepicker .ui-timepicker .pi.pi-chevron-up,
+#custom-css p-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover,
+#custom-css p-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+#custom-css p-calendar .ui-datepicker .ui-timepicker .pi.pi-chevron-down:hover, 
+#custom-css p-calendar .ui-datepicker .ui-timepicker .pi.pi-chevron-up:hover{
+  color: var(--whiteColor) !important;
+}
