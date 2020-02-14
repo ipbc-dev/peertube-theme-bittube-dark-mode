@@ -187,6 +187,7 @@ p-multiselect .pi.pi-chevron-down::after{
 /* Stroke */
 #custom-css  my-global-icon svg circle[stroke="#000000"],
 #custom-css  my-global-icon svg g[stroke="#000000"],
+#custom-css  my-global-icon svg g[stroke="#000"],
 #custom-css  my-global-icon svg path[stroke="#000000"],
 #custom-css  my-global-icon svg polygon[stroke="#000000"],
 #custom-css  my-global-icon svg rect[stroke="#000000"],
