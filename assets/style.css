@@ -359,3 +359,9 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css p-calendar .ui-datepicker .ui-timepicker .pi.pi-chevron-up:hover{
   color: var(--whiteColor) !important;
 }
+
+/* 404 Not found page */
+#custom-css my-page-not-found img {
+  width: 350px !important;
+  margin-bottom: 0px !important;
+}

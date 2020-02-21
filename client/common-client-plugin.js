@@ -2,6 +2,7 @@ function register ({ registerHook, peertubeHelpers }) {
   
   const baseStaticUrl = peertubeHelpers.getBaseStaticRoute()
   const imageUrl = baseStaticUrl + '/images/filter_white.png';
+  const image404 = baseStaticUrl + '/images/404w.svg'
   // Change filter icon
   const style = document.createElement('style')
       document.head.appendChild(style)
@@ -11,6 +12,19 @@ function register ({ registerHook, peertubeHelpers }) {
       rule+= " }"
       sheet.insertRule(rule, 0)
   // END
+
+  /* ANGULAR NAVIGATION-END */
+  registerHook({
+    target: 'action:router.navigation-end',
+    handler: params => {
+      if(document.querySelector('my-page-not-found')){
+        const img = document.querySelector('my-page-not-found').querySelector('img')
+        if(img){
+          img.src = image404
+        }
+      }
+    }
+  })
 }
 
 export {
