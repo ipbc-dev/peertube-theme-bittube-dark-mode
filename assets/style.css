@@ -40,6 +40,14 @@ body {
   fill: var(--whiteColor) !important;
 }
 
+#custom-css .footer-links a,
+#custom-css .footer-copyleft a{
+  color: var(--whiteColor) !important
+}
+/* Toast notifications*/
+#custom-css .ui-toast .ui-toast-message-content{
+  color: var(--whiteColor);
+}
 /* Dropdown */
 #custom-css .dropdown-menu,
 #custom-css .dropdown-menu .dropdown-item{
@@ -61,6 +69,9 @@ body {
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
+#custom-css .ui-inputswitch-slider{
+  box-shadow: none !important;
+}
   /* Dropdown inputs && checkboxes */
   #custom-css .dropdown-menu .peertube-select-container,
   #custom-css .dropdown-menu input[type="text"], 
@@ -77,7 +88,20 @@ body {
   #custom-css .header .options-row > div{
     justify-content: space-between;
   }
+  #custom-css .dropdown-item:hover .ml-auto{
+    box-shadow: 0 0 0 0.1em var(--menuForegroundColor) !important;
+  }
+  #custom-css .ml-auto:after{
+    background-color: var(--whiteColor);
+  }
+  #custom-css #typeahead-container input{
+    border-color: var(--mainForegroundColor) !important;
+  }
+
 /* Buttons */
+#custom-css .icon.icon-shortcuts{
+  color: var(--mainForegroundColor) !important;
+}
 #custom-css .upload-button, 
 #custom-css .upload-button:active, 
 #custom-css .upload-button:focus,
@@ -136,7 +160,25 @@ body {
   border-color: var(--mainForegroundColor);
 }
 /* Inputs */
-.root .form-group-checkbox input:checked + span{
+#custom-css input, 
+#custom-css textarea{
+  background: var(--inputColor) !important;
+  color: var(--mainForegroundColor) !important;
+  border: 1px solid var(--mainBackgroundColor);
+}
+#custom-css .am-donate-main .button input{
+  color: var(--mainColor) !important;
+  background: var(--whiteColor) !important;
+  border: none !important;
+}
+#custom-css .am-donate-main .donation-details{
+  color: var(--mainBackgroundColor);
+}
+#custom-css input[type="submit"]{ /* Buttons */
+  color: var(--whiteColor) !important;
+  background: var(--mainColor) !important;
+}
+#custom-css .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
 #custom-css .action-button .count{
@@ -146,17 +188,19 @@ body {
   color: var(--whiteColor);
 }
 /* Selects */
-.peertube-select-container, input[type="text"], textarea{
+#custom-css .peertube-select-container, input[type="text"]{
   border: 1px solid var(--mainBackgroundColor) !important;
+  background: var(--inputColor) !important;
+  color: var(--mainForegroundColor) !important;
 }
-.peertube-select-container > select {
-  background: var(--inputColor);
-  color: var(--mainForegroundColor);
+#custom-css .peertube-select-container > select {
+  background: var(--inputColor) !important;
+  color: var(--mainForegroundColor) !important;
 }
-.peertube-select-container:after{
+#custom-css .peertube-select-container:after{
   border-top-color: var(--mainForegroundColor) !important;
 }
-.peertube-select-container > select > option{
+#custom-css .peertube-select-container > select > option{
   background: var(--inputColor);
   color: var(--mainForegroundColor) !important;
 }
