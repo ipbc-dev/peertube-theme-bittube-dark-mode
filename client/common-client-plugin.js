@@ -1,14 +1,20 @@
 function register ({ registerHook, peertubeHelpers }) {
   
   const baseStaticUrl = peertubeHelpers.getBaseStaticRoute()
-  const imageUrl = baseStaticUrl + '/images/filter_white.png';
+  const imageFilterUrl = baseStaticUrl + '/images/filter_white.png';
+  const imageShortcutsUrl = baseStaticUrl + '/images/keyboard-gray.png'
   const image404 = baseStaticUrl + '/images/404w.svg'
   // Change filter icon
   const style = document.createElement('style')
       document.head.appendChild(style)
       const sheet = style.sheet
       let rule = "#custom-css .icon.icon-filter { "
-      rule+= " background-image: url('"+ imageUrl +"');"
+      rule+= " background-image: url('"+ imageFilterUrl +"');"
+      rule+= " }"
+      sheet.insertRule(rule, 0)
+  // Change shortcuts icon
+      rule = "#custom-css .icon.icon-shortcuts {"
+      rule+= " background-image: url('" + imageShortcutsUrl + "');"
       rule+= " }"
       sheet.insertRule(rule, 0)
   // END

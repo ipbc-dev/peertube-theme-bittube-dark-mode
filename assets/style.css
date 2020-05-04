@@ -88,7 +88,7 @@ body {
   #custom-css .header .options-row > div{
     justify-content: space-between;
   }
-  #custom-css .dropdown-item:hover .ml-auto{
+  #custom-css .dropdown-item:hover .ml-auto:not(.glyphicon){
     box-shadow: 0 0 0 0.1em var(--menuForegroundColor) !important;
   }
   #custom-css .ml-auto:after{
@@ -99,9 +99,6 @@ body {
   }
 
 /* Buttons */
-#custom-css .icon.icon-shortcuts{
-  color: var(--mainForegroundColor) !important;
-}
 #custom-css .upload-button, 
 #custom-css .upload-button:active, 
 #custom-css .upload-button:focus,
@@ -174,10 +171,21 @@ body {
 #custom-css .am-donate-main .donation-details{
   color: var(--mainBackgroundColor);
 }
-#custom-css input[type="submit"]{ /* Buttons */
+#custom-css input[type="submit"],
+#custom-css input[type="button"]{ /* Buttons */
   color: var(--whiteColor) !important;
   background: var(--mainColor) !important;
+  border: none !important;
 }
+#custom-css input[type="submit"]:hover,
+#custom-css input[type="button"]:hover,
+#custom-css .submit-button:hover input{ 
+  background: var(--mainHoverColor) !important;
+}
+#custom-css .submit-button.disabled input{ 
+  background: var(--menuForegroundColor) !important;
+} 
+
 #custom-css .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
@@ -237,6 +245,10 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css  my-global-icon svg rect[stroke="#000000"],
 #custom-css  my-global-icon svg ellipse[stroke="#000000"]{
   stroke: var(--mainForegroundColor) !important;
+}
+
+#custom-css my-global-icon[iconname="video-lang"] svg path{
+  fill: transparent;
 }
 
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
