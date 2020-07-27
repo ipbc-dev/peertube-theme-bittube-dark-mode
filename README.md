@@ -1,6 +1,6 @@
-# BitTube dark theme
+# BitTube dark theme (no Background)
 
-    Dark theme for BitTube instances in PeerTube. 
+    Dark theme for BitTube instances in PeerTube. The background has been removed  in this version
 
    # How to install in your PeerTube instance
 
