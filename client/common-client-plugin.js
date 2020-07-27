@@ -18,12 +18,6 @@ function register ({ registerHook, peertubeHelpers }) {
       rule+= " background-image: url('" + imageShortcutsUrl + "');"
       rule+= " }"
       sheet.insertRule(rule, 0)
-  // Change background 
-      rule = " #custom-css .sub-header-container{ "
-      rule+= " background-image: url('"+ backgroundUrl +"'); -webkit-filter: none; filter: none"
-      rule+= " } "
-      sheet.insertRule(rule, 0)
-  // END
 
   /* ANGULAR NAVIGATION-END */
   registerHook({
