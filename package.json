@@ -1,7 +1,7 @@
 {
-  "name": "peertube-theme-bittube-dark-mode",
+  "name": "peertube-theme-bittube-dark-mode-no-background",
   "version": "2.0.0",
-  "description": "BitTube dark theme",
+  "description": "BitTube dark theme without background",
   "engine": {
     "peertube": ">=1.3.0"
   },
