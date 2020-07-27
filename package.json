@@ -9,9 +9,9 @@
     "peertube",
     "theme"
   ],
-  "homepage": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode",
+  "homepage": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode-no-background",
   "author": "BitTube",
-  "bugs": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode/issues",
+  "bugs": "https://github.com/ipbc-dev/peertube-theme-bittube-dark-mode-no-background/issues",
   "staticDirs": {
     "images": "public/images"
   },
