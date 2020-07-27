@@ -14,6 +14,15 @@ body {
   --dangerBackgroundColor: #d9534f;
   /*font-family: "Open Sans",sans-serif;*/
 }
+
+/* Main background */
+#custom-css .sub-header-container{
+  background-position: center top;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
 /* Header */
 #search-video{
   background: var(--mainBackgroundColor) !important;
