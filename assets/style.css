@@ -249,6 +249,7 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css  my-global-icon svg circle[stroke="#000000"],
 #custom-css  my-global-icon svg g[stroke="#000000"],
 #custom-css  my-global-icon svg g[stroke="#000"],
+#custom-css  my-global-icon svg path[stroke="#000"],
 #custom-css  my-global-icon svg path[stroke="#000000"],
 #custom-css  my-global-icon svg polygon[stroke="#000000"],
 #custom-css  my-global-icon svg rect[stroke="#000000"],
@@ -282,6 +283,7 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css .dropdown-item:hover my-global-icon svg circle[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg g[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000000"],
+#custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000"],
 #custom-css .dropdown-item:hover my-global-icon svg polygon[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg rect[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"],
@@ -325,6 +327,27 @@ p-multiselect .pi.pi-chevron-down::after{
 #custom-css .dropdown-item:active my-global-icon svg rect[fill="#000000"]{
   fill: var(--whiteColor) !important;
 }
+/* Mute servers Icon */
+#custom-css .dropdown-item my-global-icon svg .st0{
+  stroke: var(--mainForegroundColor);
+}
+#custom-css .dropdown-item:hover my-global-icon svg .st0,
+#custom-css .dropdown-item:active my-global-icon svg .st0 {
+  stroke: var(--whiteColor);
+}
+#custom-css .dropdown-item my-global-icon svg .st1 {
+  fill: var(--mainForegroundColor);
+}
+#custom-css .dropdown-item:hover my-global-icon svg .st1,
+#custom-css .dropdown-item:active my-global-icon svg .st1 {
+  fill: var(--whiteColor);
+}
+/* Language Icon */
+#custom-css my-global-icon[iconname="language"] svg path,
+#custom-css .dropdown-item:hover my-global-icon[iconname="language"] svg path,
+#custom-css .dropdown-item:active my-global-icon[iconname="language"] svg path {
+  fill: var(--mainForegroundColor) !important;
+}
 
 /* Pagination */
 #custom-css .ui-paginator .ui-paginator-element:hover:not(.ui-state-disabled){
@@ -345,6 +368,9 @@ p-multiselect .pi.pi-chevron-down::after{
   background-color: var(--mainBackgroundColor);
   color: var(--mainForegroundColor);
 }
+#custom-css .notification my-global-icon .feather{
+  color: var(--mainForegroundColor) !important;
+}
 #custom-css .notification.unread{
   background-color: var(--menuAndHeaderBackgroundColor);
 }
@@ -364,6 +390,10 @@ p-multiselect .pi.pi-chevron-down::after{
 }
 #custom-css .popover-notifications.popover .popover-body .all-notifications svg g path[fill="#333333"]{
   fill: var(--mainForegroundColor);
+}
+
+#custom-css .header my-global-icon .feather{
+  color: var(--whiteColor);
 }
 
 /* Create new playlist, url video... preview box */

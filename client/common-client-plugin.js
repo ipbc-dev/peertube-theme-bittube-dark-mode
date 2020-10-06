@@ -14,7 +14,7 @@ function register ({ registerHook, peertubeHelpers }) {
       rule+= " }"
       sheet.insertRule(rule, 0)
   // Change shortcuts icon
-      rule = "#custom-css .icon.icon-shortcuts {"
+      rule = "#custom-css .dropdown-item .icon.icon-shortcuts {"
       rule+= " background-image: url('" + imageShortcutsUrl + "');"
       rule+= " }"
       sheet.insertRule(rule, 0)
