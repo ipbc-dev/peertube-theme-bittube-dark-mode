@@ -460,3 +460,8 @@ p-multiselect .pi.pi-chevron-down::after{
   width: 350px !important;
   margin-bottom: 0px !important;
 }
+
+/* About */
+#custom-css .anchor-link .section-title {
+  color: inherit;
+}
