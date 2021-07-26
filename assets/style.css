@@ -3,6 +3,8 @@ body {
   --mainBackgroundColor: #121212;
   --mainForegroundColor: rgba(195,195,195,0.878431);
   --submenuColor: #272727;
+  --submenuBackgroundColor: #272727;
+  --channelBackgroundColor: #272727;
   --inputColor: #272727;
   --inputPlaceholderColor: rgba(195,195,195,0.878431);
   --menuAndHeaderBackgroundColor: #272727;
